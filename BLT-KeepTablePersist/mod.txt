@@ -1,0 +1,24 @@
+{
+	"name": "BLT-KeepTable Persist",
+	"description": "KeepTable test, persist method",
+	"author": "ThatGuyFromBB",
+	"contact": "https://github.com/thatguyfrombb/BLT-KeepTable-Test",
+	"version": "0.1",
+	"priority": 0,
+	"persist_scripts": [
+	{
+		"global": "bltKeepTable_data",
+		"script_path": "Persist.lua"
+	}
+	],
+	"hooks": [
+		{
+			"hook_id": "core/lib/setups/CoreSetup",
+			"script_path": "DestructorCaller.lua"
+		},
+		{
+			"hook_id": "lib/managers/localizationmanager",
+			"script_path": "LocalizationManager.lua"
+		}
+	]
+}
